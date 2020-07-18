@@ -4,3 +4,12 @@
 
 
 solution:
+class Tester {
+	public static void main(String[] args) {
+ 		float P = 5000, R = 10, T = 5;
+ 		float SI = (P*R*T)/100;
+        System.out.println("Simple interest = "+ SI);
+
+
+	}
+}
