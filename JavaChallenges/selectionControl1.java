@@ -9,7 +9,7 @@ class Tester {
 		int Num2 = 5;
 		int Num3 = 5;
 
-		if(Num1 <= Num2 && Num1 >= Num3);{
+		if(Num1 >= Num2 && Num1 >= Num3);{
 		System.out.println(6 + 5 *3 +1);
 		}
 		else if(Num1 <= Num2 && Num1 <= Num3); {
