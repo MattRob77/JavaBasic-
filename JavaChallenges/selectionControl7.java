@@ -25,7 +25,7 @@ class Tester {
 		int year = 15;
 
 		if(day == 31 && month == 12) {
-		    System.out.println("1-1" + "-" + ++year);
+		    System.out.println("Date" + "1-1" + "-" + ++year);
 		}
 		else {
 		    System.out.println("" + ++day + "-" + month + "-" + year);
