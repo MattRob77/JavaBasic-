@@ -17,3 +17,26 @@ class Tester {
 		}
 	}
 }
+
+
+
+class Tester {
+	public static void main(String[] args) {
+		int num1 = 7;
+		int num2 = 8;
+		int num3 = 2;
+
+		if (num1 == 7 && num2 == 7) {
+		    System.out.println(num3);
+		}
+		else if (num2 == 7) {
+		    System.out.println(num3);
+		}
+		else if (num3 == 7) {
+		    System.out.println(-1);
+		}
+		else {
+		    System.out.println(num2 * num3);
+		}
+	}
+}
