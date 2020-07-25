@@ -28,9 +28,23 @@ class Restaurant {
 		System.out.println();
 	}
 }
+
+
 //Accessing the daya in the array
 long[] restaurantContacts = new long[3];
 restaurantContacts [0] = 9992346725L; // Elements can be updated and accessed with the help of index
 restaurantContacts [1] = 9992346726L;
 restaurantContacts [2] = 9992346727L;
 System.out.println(restaurantContacts [1]) ;// Accessing and displaying the element at the 1st index
+
+
+//Accessing the data from index of array using a loop
+public class Tester {
+	public static void main(String[] args) {
+		long[] restaurantContacts = { 9992346725L, 9992346726L, 9992346727L };
+		for (int index = 0; index < restaurantContacts.length; index++) {
+			// Accessing element at position index
+			System.out.println(restaurantContacts[index]);
+		}
+	}
+}
