@@ -1,22 +1,22 @@
 class Booking{
-
+//private class with methods
 	private String customerEmail;
     private int seatsRequired;
     private boolean isBooked;
     private static int seatsAvailable;
 
-    static {
+    static { //using static for the available seats in the arena
     	seatsAvailable = 1000;
     }
 
 
-
+    //set the constructor to access the private methods
     public Booking(String customerEmail, int seatsRequired) {
 		super();
 		this.customerEmail = customerEmail;
 		this.seatsRequired = seatsRequired;
 
-		if (seatsRequired <= seatsAvailable) {
+		if (seatsRequired <= seatsAvailable) { //conditional to show booked
 			this.isBooked = true;
 		} else {
 			this.isBooked = false;
@@ -24,7 +24,7 @@ class Booking{
 	}
 
 
-
+//Getter and Setters for private
 	public String getCustomerEmail() {
 		return customerEmail;
 	}
@@ -77,13 +77,13 @@ class Booking{
 
 
 
-class Tester {
+class Tester { //Tester main program
     public static void main(String[] args) {
         Booking booking1 = new Booking("Lily@email.com", 450);
         Booking booking2 = new Booking("james@email.com", 200);
         Booking booking3 = new Booking("mr@email.com", 700);
 
-        //Create more objects and add them to the bookings array for testing your code
+        
 
         Booking[] bookings = { booking1, booking2, booking3 };
 
